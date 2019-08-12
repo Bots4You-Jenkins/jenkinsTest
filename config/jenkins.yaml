@@ -16,12 +16,12 @@ jenkins:
   clouds:
   - kubernetes:
       containerCapStr: "0"
-      jenkinsTunnel: "0.0.0.0:50000"
-      jenkinsUrl: "http://0.0.0.0:8080"
+      jenkinsTunnel: "jenkins.jx.jenkins.bots4you.de:50000"
+      jenkinsUrl: "http://jenkins.jx.jenkins.bots4you.de:8080"
       maxRequestsPerHostStr: "32"
       name: "kubernetes"
       namespace: "jx"
-      serverUrl: "https://kubernetes.default"
+      serverUrl: "jenkins.jx.jenkins.bots4you.de"
       templates:
       - containers:
         - args: "cat"
